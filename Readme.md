@@ -16,7 +16,7 @@ After 8 hours of concerted hard work, we got the full adder working - which by d
 
 Previously, we were able to verify that the 1-bit full adder works by manually examining whether the sum and carry were lit. This process can be extremely arduous and susceptible. 
 
-We hence decide to use a Field Programmable Gate Array (FPGA) to automate the testing. We use a **Finite State Machine **to run all the test cases. In total we have 11 test cases - 8 to simulate the 8 different cases of input along with 3 more states - Default, Success and Error. 
+We hence decide to use a Field Programmable Gate Array (FPGA) to automate the testing. We use a **Finite State Machine**to run all the test cases. In total we have 11 test cases - 8 to simulate the 8 different cases of input along with 3 more states - Default, Success and Error. 
 
 There are two levels of implementation. The first is semi-automated error checking - the user will still have to manually control the inputs with the 3 rightmost dip switches.  The segment display will show if it is a `YAY` or `NAY` to indicate Success and error respestively. We implement this with a series of conditionals. 
 
@@ -40,7 +40,7 @@ For more, the [**Video**](https://youtu.be/rhJR6hDfmiw) shows a more comprehensi
 
 ##### 4. Load into FPGA Flash Memory / RAM 
 
-#####5. Connect FPGA to the circuit according to the input and output ports defined by the ```custom.ucf``` file. 
+##### 5. Connect FPGA to the circuit according to the input and output ports defined by the ```custom.ucf``` file. 
 
 ``````
 NET "sum" LOC = P33 | IOSTANDARD = LVTTL;
